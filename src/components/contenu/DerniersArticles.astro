@@ -1,0 +1,12 @@
+
+---
+import { API_URL } from "../../utils/constants";
+import type { Article } from "../../types/types";
+import ListeArticles from "./ListeArticles.astro";
+
+// json-server : tri + limite
+const res = await fetch(`${API_URL}/articles?_sort=date&_order=desc&_limit=12`);
+const articles = await res.json();
+---
+<!-- articles est issu d'un fetch, TS ne connait pas à l'avance son type ==> on force le type avec le mot clé "as" (tableau d'articles')  -->
+<ListeArticles titre="Derniers articles" liste={articles as Article[]} />

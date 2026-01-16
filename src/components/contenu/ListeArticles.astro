@@ -1,0 +1,25 @@
+---
+const { titre, liste } = Astro.props;
+import type { Article } from "../../types/types";
+---
+
+<section>
+  <h2>{titre}</h2>
+
+  <ul>
+    {
+      liste.map((article: Article) => (
+        <li>
+          <a href={`/blog/article/${article.slug}`}>{article.title}</a>
+          <small>
+            <a href={`/blog/articles-par-categorie/${article.category}`}>
+              {article.category}
+            </a>
+            — {article.date}
+          </small>
+          <p>{article.excerpt}</p>
+        </li>
+      ))
+    }
+  </ul>
+</section>

@@ -1,0 +1,27 @@
+
+---
+import { API_URL } from "../../utils/constants";
+import type { Article } from "../../types/types";
+import { marked } from "marked";
+const { slug } = Astro.props;
+
+const res = await fetch(`${API_URL}/articles?slug=${encodeURIComponent(slug)}`);
+if (!res.ok) {
+  throw new Error("Erreur lors de la récupération de l'article");
+}
+const articles = await res.json();
+const article = (articles as Article[])[0];
+const htmlContent = marked.parse(article.content);
+
+---
+
+<article>
+  <h1>{article.title}</h1>
+
+  <small>
+    — <a href={`/blog/articles-par-categorie/${article.category}`}>{article.category}</a> — {
+      article.date
+    }
+  </small>
+  <div set:html={htmlContent}></div>
+</article>

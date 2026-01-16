@@ -1,6 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Publicite from "../components/contenu/Publicite.astro";
+import DerniersArticles from "../components/contenu/DerniersArticles.astro";
+
 ---
-<BaseLayout title="Page X">
-  <h1>Contenu</h1>
+<BaseLayout title="Page d'accueil">
+  <h1>Accueil</h1>
+
+  <DerniersArticles />
+	<Publicite />
 </BaseLayout>
