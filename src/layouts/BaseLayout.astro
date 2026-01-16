@@ -1,0 +1,23 @@
+---
+import Footer from '../components/ui/Footer.astro';
+import Header from '../components/ui/Header.astro';
+import "../styles/global.css";
+
+const { title = "Mon blog" } = Astro.props;
+---
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
