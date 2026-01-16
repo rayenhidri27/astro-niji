@@ -1,0 +1,151 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "astuce",
+      "slug": "astuce"
+    },
+    {
+      "id": 2,
+      "name": "tutoriel",
+      "slug": "tutoriel"
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "Mon premier article",
+      "slug": "mon-premier-article",
+      "date": "2025-12-01",
+      "category": "astuce",
+      "excerpt": "Ceci est un extrait court du premier article.",
+      "content": "Titre\n\nContenu **markdown** complet du premier article."
+    },
+    {
+      "id": 2,
+      "title": "Un tutoriel Astro",
+      "slug": "un-tutoriel-astro",
+      "date": "2025-12-05",
+      "category": "tutoriel",
+      "excerpt": "Extrait pour le tutoriel Astro.",
+      "content": "Le contenu en **markdown** du tutoriel."
+    },
+    {
+      "id": 3,
+      "title": "Optimiser son poste de travail",
+      "slug": "optimiser-poste-de-travail",
+      "date": "2025-12-02",
+      "category": "astuce",
+      "excerpt": "Améliore ton espace de travail pour être plus productif.",
+      "content": "Optimisation : Voici comment optimiser ton environnement de travail de manière efficace."
+    },
+    {
+      "id": 4,
+      "title": "Comprendre le caching HTTP",
+      "slug": "comprendre-caching-http",
+      "date": "2025-12-03",
+      "category": "tech",
+      "excerpt": "Une introduction simple et claire au caching HTTP.",
+      "content": "Caching HTTP : Le caching améliore les performances en réduisant les requêtes."
+    },
+    {
+      "id": 5,
+      "title": "Choisir une bonne police web",
+      "slug": "choisir-police-web",
+      "date": "2025-12-04",
+      "category": "design",
+      "excerpt": "Comment sélectionner une typographie lisible et esthétique.",
+      "content": "Typographie : Les polices influencent fortement la lisibilité d'une interface."
+    },
+    {
+      "id": 6,
+      "title": "Les bases de l’accessibilité",
+      "slug": "bases-accessibilite",
+      "date": "2025-12-05",
+      "category": "accessibilite",
+      "excerpt": "Les règles essentielles pour rendre ton site accessible.",
+      "content": "Accessibilité\n\nL’accessibilité permet à tous d'utiliser ton application."
+    },
+    {
+      "id": 7,
+      "title": "Créer un dark mode en CSS",
+      "slug": "dark-mode-css",
+      "date": "2025-12-06",
+      "category": "css",
+      "excerpt": "Un guide simple pour implémenter un mode sombre.",
+      "content": "Dark Mode\n\nLe dark mode améliore le confort visuel."
+    },
+    {
+      "id": 8,
+      "title": "Comprendre les hooks React",
+      "slug": "comprendre-hooks-react",
+      "date": "2025-12-07",
+      "category": "react",
+      "excerpt": "Les hooks expliqués simplement pour les débutants.",
+      "content": "Hooks\n\nLes hooks permettent d'utiliser l'état et des effets dans les composants."
+    },
+    {
+      "id": 9,
+      "title": "Configurer ESLint pour Next.js",
+      "slug": "configurer-eslint-nextjs",
+      "date": "2025-12-08",
+      "category": "nextjs",
+      "excerpt": "Un setup ESLint propre et efficace pour Next.js.",
+      "content": "ESLint\n\nESLint aide à maintenir un code propre et cohérent."
+    },
+    {
+      "id": 10,
+      "title": "Faire une API REST avec json-server",
+      "slug": "api-rest-json-server",
+      "date": "2025-12-09",
+      "category": "api",
+      "excerpt": "Simule une vraie API REST en quelques secondes.",
+      "content": "json-server\n\nUn outil rapide pour prototyper des APIs."
+    },
+    {
+      "id": 11,
+      "title": "Structurer un projet Next.js",
+      "slug": "structurer-projet-nextjs",
+      "date": "2025-12-10",
+      "category": "nextjs",
+      "excerpt": "Une structure claire et scalable pour ton projet Next.js.",
+      "content": "Structure\n\nOrganiser son projet facilite la maintenance."
+    },
+    {
+      "id": 12,
+      "title": "Les media queries modernes",
+      "slug": "media-queries-modernes",
+      "date": "2025-12-11",
+      "category": "css",
+      "excerpt": "Découvre les nouvelles media queries de CSS.",
+      "content": "Media Queries\n\nCSS évolue et propose de nouveaux outils pour le responsive."
+    },
+    {
+      "id": 13,
+      "title": "Pourquoi utiliser TypeScript",
+      "slug": "pourquoi-typescript",
+      "date": "2025-12-12",
+      "category": "typescript",
+      "excerpt": "Les raisons d’adopter TypeScript dès maintenant.",
+      "content": "TypeScript\n\nTS apporte du typage statique au JavaScript."
+    },
+    {
+      "id": 14,
+      "title": "Créer un composant réutilisable",
+      "slug": "creer-composant-reutilisable",
+      "date": "2025-12-13",
+      "category": "react",
+      "excerpt": "Méthodes simples pour créer des composants flexibles.",
+      "content": "Composants\n\nLes composants doivent être découplés et réutilisables."
+    },
+    {
+      "id": 15,
+      "title": "Améliorer les performances d’un site",
+      "slug": "ameliorer-performances-site",
+      "date": "2025-12-14",
+      "category": "performance",
+      "excerpt": "Techniques clés pour un site plus rapide.",
+      "content": "Performance\n\nOptimiser les assets, le cache, et le rendu."
+    }
+  ]
+}

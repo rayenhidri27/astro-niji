@@ -3,11 +3,12 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
+  "dev:api": "json-server src/back/db.json --port 5000",
+  "dev:astro": "astro dev --port 4000",
+  "dev": "concurrently \"npm:dev:api\" \"npm:dev:astro\"",
+  "build": "astro build",
+  "preview": "astro preview"
+},
   "dependencies": {
     "@astrojs/node": "^9.5.2",
     "@astrojs/react": "^4.4.2",
