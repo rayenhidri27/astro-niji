@@ -63,16 +63,27 @@ a:hover {
   text-decoration: underline;
 }
 
-.contenu{
+.contenu {
   display: flex;
   justify-content: space-between;
   gap: 5%;
 }
-.accueil-col-1{
+
+.accueil-col-1 {
   width: 70%;
 }
 
-.accueil-col-2{
+.accueil-col-2 {
   margin-top: 2.5rem;
   width: 25%;
 }
+
+
+.react-responsive-modal-modal {
+  max-height: 80vh;
+  overflow-y: auto;
+  position: absolute;
+  right: 0;
+  margin: 0;
+} 
+
