@@ -1,0 +1,15 @@
+---
+import ListeArticles from "../../../../components/contenu/ListeArticles.astro";
+import ListeCategories from "../../../../components/contenu/ListeCategories.astro";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import { API_URL } from "../../../../utils/constants";
+const { categorie } = Astro.params;
+const res = await fetch(`${API_URL}/articles?category=${categorie}`);
+const articles = await res.json();
+---
+
+<BaseLayout>
+<h1>article par categ</h1>
+<ListeArticles titre=`Articles de la catégorie ${categorie}` liste={articles} />
+<ListeCategories/>
+

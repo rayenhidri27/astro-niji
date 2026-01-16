@@ -1,0 +1,20 @@
+---
+import type { Category } from "../../types/types";
+import { API_URL } from "../../utils/constants";
+// json-server : tri + limite
+const res = await fetch(`${API_URL}/categories`);
+const categories = await res.json();
+---
+
+<h2>Liste des catégories ({categories.length})</h2>
+
+<ul>
+  {
+    categories.map((categorie: Category) => (
+      <li>
+        <a href={`/blog/articles-par-categorie/${categorie.slug}`}>
+          {categorie.name}
+        </a>
+      </li>
+    ))
+  }

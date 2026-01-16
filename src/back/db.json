@@ -9,6 +9,51 @@
       "id": 2,
       "name": "tutoriel",
       "slug": "tutoriel"
+    },
+    {
+      "id": 3,
+      "name": "tech",
+      "slug": "tech"
+    },
+    {
+      "id": 4,
+      "name": "design",
+      "slug": "design"
+    },
+    {
+      "id": 5,
+      "name": "accessibilite",
+      "slug": "accessibilite"
+    },
+    {
+      "id": 6,
+      "name": "css",
+      "slug": "css"
+    },
+    {
+      "id": 7,
+      "name": "react",
+      "slug": "react"
+    },
+    {
+      "id": 8,
+      "name": "nextjs",
+      "slug": "nextjs"
+    },
+    {
+      "id": 9,
+      "name": "api",
+      "slug": "api"
+    },
+    {
+      "id": 10,
+      "name": "typescript",
+      "slug": "typescript"
+    },
+    {
+      "id": 11,
+      "name": "performance",
+      "slug": "performance"
     }
   ],
   "articles": [
